@@ -1,3 +1,10 @@
+/*TODO:
+ 
+* add check for first unclosed bracket
+* put everything into a function
+* run unit tests on example problems
+
+*/
 var str = 'He{l}}{{{{lo W}}or}ld!';
 var openBrackets = [];
 var flag = true;
@@ -9,7 +16,7 @@ while (flag === true){
             //adds open bracket to the array
             openBrackets.push('open');
         }else if (str[i] === '}' ){
-            for (let j = openBrackets.length-1;j>=0; j--){
+            for (let j = openBrackets.length-1; j>=0; j--){
                 // finds open bracket to match with close bracket
                 if (openBrackets[j] === 'open') {
                     openBrackets[j] = 'closed';
