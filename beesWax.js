@@ -5,7 +5,7 @@ function beesWax(str){
         arr.push(str[i]);
     }
     // changes all balanced brackets to 'balanced'
-    for (let i = arr.length-1; i >= 0; i--){
+    for (let i = 0; i < arr.length; i++){
         // check for open brackets
         if (arr[i] == '}'){
             for (let j = i-1; j >= 0; j--){
